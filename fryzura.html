@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Usługi fryzjerskie</title>
+    <link rel="stylesheet" href="styl2.css" />
+  </head>
+  <body>
+    <main>
+      <section class="left">
+        <div class="first-left-block">
+          <a href="./index.html">
+            <h2 class="left-title">SALON FRYZJERSKI</h2>
+          </a>
+          <img
+            src="./obraz2.jpg"
+            alt="Czesanie"
+            width="600"
+            height="290"
+            class="left-img"
+          />
+        </div>
+        <div class="second-left-block">
+          <h3 class="right-subtitle fryzura">
+            Dziś promocja na strzyżenie włosów
+          </h3>
+          <form class="form">
+            <label
+              ><input
+                type="radio"
+                name="opcjaStrzyzenia"
+                id="krótkie"
+                value="krótkie"
+              />krótkie</label
+            >
+            <label>
+              <input
+                type="radio"
+                name="opcjaStrzyzenia"
+                id="średnie"
+                value="średnie"
+              />średnie</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="opcjaStrzyzenia"
+                id="półdługie"
+                value="półdługie"
+              />półdługie</label
+            >
+            <label>
+              <input
+                type="radio"
+                name="opcjaStrzyzenia"
+                id="długie"
+                value="długie"
+              />długie</label
+            >
+            <button type="submit">Odkryj promocję</button>
+          </form>
+          <p>Cena strzyżenia: <span id="cena"></span></p>
+        </div>
+      </section>
+      <section class="right">
+        <div class="first-right-block"><h2 class="right-title">MENU</h2></div>
+        <div class="second-right-block">
+          <ol class="right-list">
+            <li>
+              <a href="./fryzura.html"> Strzyżenie</a>
+              <ul class="right-indoor-list">
+                <li>krótkie</li>
+                <li>średnie</li>
+                <li>półdługie</li>
+                <li>długie</li>
+              </ul>
+            </li>
+            <li>Czesanie</li>
+            <li>Koloryzacja</li>
+          </ol>
+        </div>
+        <div class="third-right-block">
+          <img src="./obraz1.jpg" alt="Fryzjer" height="290" />
+        </div>
+      </section>
+    </main>
+    <footer><p class="footer-text">Author: 04251509354</p></footer>
+    <script>
+      const form = document.querySelector(".form");
+      const cena = document.getElementById("cena");
+      console.log(form);
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        switch (event.target.elements.opcjaStrzyzenia.value) {
+          case "długie":
+            cena.innerHTML = 50;
+            break;
+          case "półdługie":
+            cena.innerHTML = 40;
+            break;
+          case "średnie":
+            cena.innerHTML = 30;
+            break;
+          case "krótkie":
+            cena.innerHTML = 25;
+            break;
+
+          default:
+            break;
+        }
+      });
+    </script>
+  </body>
+</html>

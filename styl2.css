@@ -1,0 +1,78 @@
+html {
+  font-family: Helvetica, sans-serif;
+}
+ol,
+h3 {
+  margin: 0;
+}
+h2 {
+  font-size: 250%;
+}
+img {
+  padding: 4px;
+}
+img:hover {
+  padding: 3px;
+  border: 1px solid steelblue;
+}
+label {
+  display: block;
+}
+.left {
+  float: left;
+  width: 70%;
+}
+.first-left-block {
+  height: 400px;
+
+  text-align: center;
+  background-color: snow;
+}
+
+.second-left-block {
+  height: 400px;
+
+  text-align: center;
+  font-size: 150%;
+  background-color: snow;
+  text-align: left;
+}
+.left-subtitle {
+  margin-top: 0;
+}
+.right {
+  float: left;
+  width: 30%;
+}
+.first-right-block {
+  height: 150px;
+
+  background-color: steelblue;
+
+  text-align: center;
+  color: white;
+}
+
+.second-right-block {
+  height: 350px;
+
+  background-color: steelblue;
+
+  color: white;
+}
+
+.third-right-block {
+  height: 300px;
+
+  background-color: snow;
+
+  text-align: center;
+}
+footer {
+  clear: both;
+
+  background-color: steelblue;
+
+  color: white;
+}
+
